@@ -1,0 +1,182 @@
+.p-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+}
+
+.p-container .titles {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-container .titles h1 {
+  padding-left: 400px;
+  color: #fff;
+  margin-bottom: 7rem;
+}
+
+.p-container .titles h2 {
+  padding-left: 400px;
+  margin-bottom: 3rem;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.p-container .titles h2 .active--pkg {
+  position: absolute !important;
+  bottom: 50% !important;
+  display: inline-block !important;
+  width: 30% !important;
+  margin-left: 200px !important;
+  -webkit-animation: pkg--hr--animation 1s forwards !important;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  animation: pkg--hr--animation 1s forwards !important;
+  /* IE 10+, Fx 29+ */
+}
+
+.p-container .text {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-container .text div {
+  padding-left: 250px;
+  -webkit-animation: pkg--txt--animation 3.5s forwards;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  animation: pkg--txt--animation 3.5s forwards;
+  /* IE 10+, Fx 29+ */
+}
+
+.p-container .text div p {
+  margin-bottom: 2rem;
+}
+
+.p-container .text div button {
+  display: block;
+  margin-top: 2rem;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.p-container .text div button a {
+  text-decoration: none;
+  color: #000;
+}
+
+@-webkit-keyframes pkg--hr--animation {
+  0% {
+    width: 10%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes pkg--hr--animation {
+  0% {
+    width: 10%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@-webkit-keyframes pkg--txt--animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pkg--txt--animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1240px) {
+  .p-container .titles h1 {
+    padding-left: 200px;
+  }
+  .p-container .titles h2 {
+    padding-left: 200px;
+  }
+  .p-container .titles h2 .active--pkg {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 950px) {
+  .p-container .titles h1 {
+    padding-left: 100px;
+  }
+  .p-container .titles h2 {
+    padding-left: 100px;
+  }
+  .p-container .titles h2 .active--pkg {
+    margin-left: 130px;
+  }
+  .p-container .text div {
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-container .titles h1 {
+    padding-left: 100px;
+  }
+  .p-container .titles h2 {
+    padding-left: 100px;
+  }
+  .p-container .titles h2 .active--pkg {
+    margin-left: 80px;
+  }
+  .p-container .text div {
+    padding-left: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

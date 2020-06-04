@@ -1,0 +1,225 @@
+.p-container {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	.titles {
+		flex: 50%;
+		background-color: #000;
+		color: #fff;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		h1 {
+			padding-left: 400px;
+			color: #fff;
+			margin-bottom: 7rem;
+		}
+		h2 {
+			padding-left: 400px;
+			margin-bottom: 3rem;
+			color: #fff;
+			cursor: pointer;
+			position: relative;
+			.active--pkg {
+				position: absolute !important;
+				bottom: 50% !important;
+				display: inline-block !important;
+				width: 30% !important;
+				margin-left: 200px !important;
+				-webkit-animation: pkg--hr--animation 1s forwards !important;
+				/* Safari 4+ */
+				/* Fx 5+ */
+				/* Opera 12+ */
+				animation: pkg--hr--animation 1s forwards !important;
+				/* IE 10+, Fx 29+ */
+			}
+		}
+	}
+	.text {
+		flex: 50%;
+		background-color: #fff;
+		color: #000;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		div {
+			padding-left: 250px;
+			-webkit-animation: pkg--txt--animation 3.5s forwards; /* Safari 4+ */
+			-moz-animation: pkg--txt--animation 3.5s forwards; /* Fx 5+ */
+			-o-animation: pkg--txt--animation 3.5s forwards; /* Opera 12+ */
+			animation: pkg--txt--animation 3.5s forwards; /* IE 10+, Fx 29+ */
+			p {
+				margin-bottom: 2rem;
+			}
+			button {
+				display: block;
+				margin-top: 2rem;
+				border: 1px solid #000;
+				border-radius: 20px;
+				padding: 10px 15px;
+				a {
+					text-decoration: none;
+					color: #000;
+				}
+			}
+		}
+	}
+}
+// ---------------ANIMATIONS---------------------------
+// hr line animation
+@-webkit-keyframes pkg--hr--animation {
+	0% {
+		width: 10%;
+	}
+	100% {
+		width: 30%;
+	}
+}
+@-moz-keyframes pkg--hr--animation {
+	0% {
+		width: 10%;
+	}
+	100% {
+		width: 30%;
+	}
+}
+@-o-keyframes pkg--hr--animation {
+	0% {
+		width: 10%;
+	}
+	100% {
+		width: 30%;
+	}
+}
+@keyframes pkg--hr--animation {
+	0% {
+		width: 10%;
+	}
+	100% {
+		width: 30%;
+	}
+}
+// end hr line animation
+
+// packages text area animation
+@-webkit-keyframes pkg--txt--animation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes pkg--txt--animation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-o-keyframes pkg--txt--animation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes pkg--txt--animation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+// end packages text area animation
+
+// ███╗░░░███╗███████╗██████╗░██╗░█████╗░  ░██████╗░██╗░░░██╗███████╗██████╗░██╗░░░██╗
+// ████╗░████║██╔════╝██╔══██╗██║██╔══██╗  ██╔═══██╗██║░░░██║██╔════╝██╔══██╗╚██╗░██╔╝
+// ██╔████╔██║█████╗░░██║░░██║██║███████║  ██║██╗██║██║░░░██║█████╗░░██████╔╝░╚████╔╝░
+// ██║╚██╔╝██║██╔══╝░░██║░░██║██║██╔══██║  ╚██████╔╝██║░░░██║██╔══╝░░██╔══██╗░░╚██╔╝░░
+// ██║░╚═╝░██║███████╗██████╔╝██║██║░░██║  ░╚═██╔═╝░╚██████╔╝███████╗██║░░██║░░░██║░░░
+// ╚═╝░░░░░╚═╝╚══════╝╚═════╝░╚═╝╚═╝░░╚═╝  ░░░╚═╝░░░░╚═════╝░╚══
+
+// ░░███╗░░██████╗░░░██╗██╗░█████╗░
+// ░████║░░╚════██╗░██╔╝██║██╔══██╗
+// ██╔██║░░░░███╔═╝██╔╝░██║██║░░██║
+// ╚═╝██║░░██╔══╝░░███████║██║░░██║
+// ███████╗███████╗╚════██║╚█████╔╝
+// ╚══════╝╚══════╝░░░░░╚═╝░╚════╝░
+
+@media (max-width: 1240px) {
+	.p-container {
+		.titles {
+			h1 {
+				padding-left: 200px;
+			}
+			h2 {
+				padding-left: 200px;
+				.active--pkg {
+					margin-left: 150px;
+				}
+			}
+		}
+	}
+}
+
+// ░█████╗░███████╗░█████╗░
+// ██╔══██╗██╔════╝██╔══██╗
+// ╚██████║██████╗░██║░░██║
+// ░╚═══██║╚════██╗██║░░██║
+// ░█████╔╝██████╔╝╚█████╔╝
+// ░╚════╝░╚═════╝░░╚════╝░
+
+@media (max-width: 950px) {
+	.p-container {
+		.titles {
+			h1 {
+				padding-left: 100px;
+			}
+			h2 {
+				padding-left: 100px;
+				.active--pkg {
+					margin-left: 130px;
+				}
+			}
+		}
+		.text {
+			div {
+				padding-left: 150px;
+			}
+		}
+	}
+}
+
+// ███████╗░█████╗░░█████╗░
+// ╚════██║██╔═══╝░██╔══██╗
+// ░░░░██╔╝██████╗░╚█████╔╝
+// ░░░██╔╝░██╔══██╗██╔══██╗
+// ░░██╔╝░░╚█████╔╝╚█████╔╝
+// ░░╚═╝░░░░╚════╝░░╚════╝░
+
+@media (max-width: 768px) {
+	.p-container {
+		.titles {
+			h1 {
+				padding-left: 100px;
+			}
+			h2 {
+				padding-left: 100px;
+				.active--pkg {
+					margin-left: 80px;
+				}
+			}
+		}
+		.text {
+			div {
+				padding-left: 100px;
+			}
+		}
+	}
+}
